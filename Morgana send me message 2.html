@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Comfortaa:wght@300&family=Passions+Conflict&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Morgana send me message 2.css">
+    <title>Morgana send me message 2</title>
+     <style>
+        @media screen and (max-width: 755px){/*280px*//*1773px*/
+            .m-sec2{
+                background-color: #008a8a;
+                /* backdrop-filter: blur(1rem); */
+                display: block;
+                height: 100vh;
+                width: 55vw;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 201;
+                box-shadow: 0 18px 36px rgba(0,0,0,0.99), 0 14px 11px rgba(0,0,0,0.2);
+                transform: translateX(-150%);
+                transition: all .5s ease-in-out;
+            }
+            #menu{
+                display: block;
+                border-bottom-right-radius: 8px;
+                font-size: 450;
+                position: fixed;
+                z-index: 200;
+                /* border: 3px double blue; */
+                background-image: linear-gradient(to right, black, rgba(0,0,0,0.35));;
+                background-size: 200%;
+                background-position: 1%;
+                color: #daa520b7;
+                width: 15vw;
+                animation: menu-icon 5s infinite alternate;
+            }
+            #close-menu{
+                display: block;
+                font-size: 45px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 15vw;
+                color: #001a1a;
+
+            }
+            @keyframes menu-icon{
+                0%{
+                    background-position: 1%;
+                }
+                100%{
+                    background-position: 100%;
+                }
+            }
+           .m-sec2 nav{
+                width: 55vw;
+                height: 77vh;/* height: 55vh; */
+                position: relative;
+                left: -5px;
+                top: 55px;
+                text-align: center;
+            }
+            .m-sec2 a{
+                /* background-color: bisque; */
+                padding: 3px 5px;
+                position: relative;
+                top: 15px;
+            }
+            #a-last-child{
+                width: 52vw;
+                position: relative;
+                left: 4px;
+                backdrop-filter: blur(3px);
+            }
+            .m-dd{
+                display: block;
+                margin: 35px auto;
+                font-family: 'Quicksand', sans-serif;
+            }
+            .m-dropdown{
+               position: absolute;
+               top: 5vw;
+               left: 45vw;
+               width: 0vw;
+               box-shadow: 18px 0 36px rgba(0, 0, 0, 0.30), 14px 0 11px rgba(0, 0, 0, 0.2);
+               /* max-height: fit-content; */
+               transition: width 1s;
+               overflow: scroll;
+               font-size: smaller;
+               float: right;
+               background-color: #5f9ea0;
+            }
+            .m-dd:hover > .m-dropdown{
+                width: 150px;
+                height: 10vh;
+            }
+            .m-sec2:hover{
+                width: 55vw;
+            }
+            .m-main2{
+                background-size: cover;
+                background-position: center;
+                min-height: 90vh;
+            }
+            .m-main2 img{
+                display: none;
+            }
+            .m-main2 div{
+                width: 90vw;
+                height: 50vh;
+                text-align: center;
+                position: relative;
+                top: 7rem;
+                left: 5%;
+                font-size: 15px;
+            }
+            .m-main2 p{
+                /* background-color: coral; */
+                /* background-color: rgba(0, 139, 139, 0.151); */
+                width: 80vw;
+                height: 35.0vh;
+                margin: 20px auto;
+                overflow: scroll;
+                position: absolute;
+                bottom: 0.99vh;
+                left: 0vw;
+                right: 0vw;
+            }
+            /* .m-main2 h3 p span{
+                position: sticky;
+                top: 45vh;
+            } */
+            .m-sect-2{
+                width: 100vw;
+                /* display: none; */
+            }
+            .m-sect-2-div-1{
+                display: block;
+                padding: 0;
+            }
+            /* .m-sect-2-div-1a{
+                width: 100vw;
+            } */
+            .shop-section img{
+                min-width: 70vw;
+                min-height: 50vh;
+                position: relative;
+                left: 15;
+                right: 15;
+                margin-bottom: 15.5px;
+                margin-left: 25px;
+            }
+            #div{
+                /* background-color: #00f5fc; */
+                /* background-image: linear-gradient(to right, darkcyan, rgba(0,0,0)); */
+                background-color: goldenrod;
+                background-size: 500%;
+                width: 200vw;
+                height: 5vh;
+                position: fixed;
+                bottom: 0;
+                animation: this-claimer 30s infinite alternate ease-out;
+                /* animation: disclaimer 50s infinite ease-out; */
+            }
+            #div p{
+                position: fixed;
+                width: 900vw;
+                height: 3vh;
+                font-size: 15px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: thin;
+                font-display: flex;
+                text-transform: uppercase;
+                color: black;
+                animation: disclaimer 80s infinite;
+            }
+            @keyframes this-claimer{
+                0%{
+                    background-position: 50%;
+                }
+                100%{
+                    background-position: 90%;
+                }
+            }
+            @keyframes disclaimer{
+                0%{
+                    position: fixed;
+                    left: 100vw;
+                }
+                100%{
+                    position: fixed;
+                    left: -800vw;
+                }
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #dfeedf;">
+   
+    <ion-icon name="menu" class="menu-icon" id="menu">menu</ion-icon>
+    <section class="m-sec2" id="m-sec2">
+        <ion-icon name="close-circle-outline" id="close-menu"></ion-icon>
+        <nav>
+            <div class="m-dd">
+                <a href="">HOME</a>
+                <div class="m-dropdown">
+                    <a href="#Menu">MENU</a>
+                    <a href="#Shop">SHOP</a>
+                </div>
+            </div>
+            
+            <div class="m-dd">
+                <a href="Morgana send me message about.html" class="services">ABOUT</a>
+                <div class="m-dropdown">
+                    <a href="#">PORTFOLIO</a>
+                    <a href="#">OUR CLIENTS</a>
+                    <a href="#">POLICY</a>
+                </div>
+            </div>
+
+            <div class="m-dd">
+                <a href="" class="services">CONTACT US</a>
+                <div class="m-dropdown">
+                    <a href="#">SOCIAL PLATFORMS</a>
+                    <a href="#">REFERALS</a>
+                    <a href="#">ADDRESS</a>
+                </div>
+            </div>
+
+            <div class="m-dd">
+                <a href="myproject.html" target="_blank" class="services">SERVICES</a>
+                <div class="m-dropdown">
+                    <a href="#">SALES</a>
+                    <a href="https://www.thenailboutique.ng/index.php" target="_blank">ITEMS</a>
+                    <a href="#">MARKETING </a>
+                </div>
+            </div>
+
+            <div class="m-dd">
+                <a href="" id="diff">BLOG</a>
+                <div class="m-dropdown">
+                    <a href="#">FAQs</a>
+                    <a href="#">GET HELP</a>
+                    <a href="#">UPDATES</a>
+                </div>
+            </div>
+            
+            <a href="" target="_self" id="a-last-child">RESERVE MY APPOINTMENT</a>
+        </nav>
+     </section>
+
+     
+
+
+
+    <main class="m-main2" style="overflow: hidden;">
+        <img src="" alt="alt text goes here" style="width: 105vw; height: 90vh;">
+        <div>
+            <strong>
+                <h1><span>The sensational luxurious manicure emprise</span></h1>
+            </strong>
+        </div>
+        
+        <h3><p>
+            <span style="font-weight: bolder; font-size: larger;">MORGANAILS</span>
+            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Debitis distinctio, reprehenderit quia asperiores dolores consectetur eum, 
+           ad aliquam ullam perferendis aliquid ex optio sapiente sunt ab doloribus non pariatur aspernatur?
+           Veritatis doloribus rem eligendi sed nesciunt error quaerat ipsam qui. Ipsa illo et hic ea ratione
+           ut esse ipsum architecto, dignissimos quisquam, quo dolor veritatis maxime, eius dolores doloremque soluta.
+        </p></h3>
+    </main>
+
+    <!--<section>
+        <!- <img src="img/nails 1.jpg" alt="img" srcset="">
+        <img src="img/Nails 2.jpg" alt="img">
+        <img src="img/Simply-resplendent.jpg" alt="img">  ->
+    </section>-->
+    
+    
+
+<div style="background-color: rgba(145, 144, 144, 0);">
+    <br >
+    <br><br>
+    <h1 class="menu" id="Menu">MENU</h1>
+    <br>
+</div>
+<!-- <marquee behavior="slow" direction="left">All customers are required to pre-book appointments right on this platform or telephone. Appointment time starts from 7:00am-5:00pm on Tuesdays through Saturdays and 6:00am-5:00pm on Sundays</marquee> -->
+    <section class="m-sect-2">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2 color-diff">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="pedicures"> PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures" >MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2 color-diff">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2 color-diff">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="silk-systems">SILK SYSTEMS</a>
+                <a href="#kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <section class="m-sect-2 color-diff">
+        <div class="m-sect-2-div-1">
+            <div class="m-sect-2-div-1a">
+                <a href="" style="color: #e38c00;" id="kids">KIDS <br> <span class="a-span">Aged 15 and below</span></a>
+                <a href="#manicures">MANICURES <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#pedicures">PEDICURES <br> <span class="a-span">Includes regular polish</span></a>
+                <a href="#mani/pedi">MANI/PEDI COMBOS <br> <span class="a-span">Performed on natural nails and includes regular polish</span></a>
+                <a href="#dipping-systems">DIPPING SYSTEMS</a>
+                <a href="#acrylic">ACRYLIC SYSTEMS</a>
+                <a href="#nail-extras">NAIL EXTRAS</a>
+                <a href="#silk-systems">SILK SYSTEMS</a>
+            </div>
+            <div class="m-sect-2-div-1b">
+                <ul style="list-style: none; display: flex; justify-content: center;">
+                    <li><h4>BASIC MANICURE</h4> #5,000</li>
+                    <li><h4>LUXURY MANICURE</h4> #6,000</li>
+                    <li><h4>LUXURY MANICURE PLUS (+ ADDITIONAL SCRUB)</h4>#6,500</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <br><br><br>
+    <h1 class="shop" id="Shop">SHOP</h1>
+    <br>
+    <section class="shop-section">
+        <img src="img/nails 1.jpg" alt="nails.1"><img src="img/Nails 2.jpg" alt="nails 2"><img src="img/nails3.jpg" alt="nails 3"><br><br><hr style="width: 85vw; position: relative; left: 7.5vw; right: 7.5vw; "><br>
+       <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima maxime dignissimos possimus earum debitis? Modi odio nemo eaque nisi at debitis temporibus atque sequi, fugit earum distinctio, excepturi ipsa vitae?
+        Nemo quasi libero, a at inventore fugiat minus, perferendis sit cupiditate architecto officia. Totam facilis ipsam ab asperiores blanditiis ullam accusamus corporis consequatur, tenetur minus vitae, esse, deserunt rem sint.
+        Cupiditate obcaecati non facere praesentium quas hic explicabo, dicta accusantium atque optio qui neque aspernatur repellendus. Dolorum esse non minus, quisquam distinctio vitae illum doloremque facilis labore, quas porro ut.
+        Fuga similique voluptatem quo debitis veniam obcaecati natus aliquam dolore nostrum error perspiciatis fugiat facere distinctio blanditiis officiis, beatae earum adipisci, laborum vero. Reprehenderit, quod! Rem maiores ea fugit possimus.
+        Possimus minus quae laudantium deserunt soluta. Quisquam qui sint dolore nihil incidunt mollitia repellendus itaque exercitationem quibusdam? Voluptas asperiores porro nesciunt fugiat ad quas sint corporis, commodi officia eius consequatur!
+        Voluptas expedita fuga illo at totam dicta dolores reprehenderit aut tempora harum vitae, omnis praesentium eligendi sequi hic perferendis, necessitatibus voluptates voluptatem nemo corrupti nostrum? Consectetur ab unde reiciendis mollitia.
+        Nobis magnam voluptatibus est maxime, molestiae a repellat ipsa similique voluptates harum ipsam fuga nam voluptas quaerat inventore libero eos natus sequi accusamus quos delectus officia quasi rem sapiente! Ipsam?
+        Accusamus soluta harum aperiam sapiente vero? Nemo fugit deserunt iure necessitatibus architecto beatae similique natus, facere distinctio voluptas commodi molestias praesentium rem consequatur in cumque atque laudantium nihil ipsum maxime!
+        Reiciendis natus suscipit eveniet nostrum excepturi odit velit. Nam expedita in molestias doloribus neque quod officiis possimus, corrupti, numquam consequatur vel sint vitae dolore facere cumque distinctio. Tenetur, omnis tempora.
+        Dolorum repudiandae, tempore obcaecati at odio, corrupti quisquam est, ipsum perspiciatis quis quas ipsa? Dolore laudantium ullam, autem sapiente numquam natus qui iusto quia ducimus. Dolore magni est voluptate harum.
+        Eligendi porro minima, aut autem aspernatur pariatur consequuntur dolorum soluta non eveniet fugit suscipit, earum voluptas quis nemo repudiandae reprehenderit! Sed fuga doloribus accusantium nihil doloremque nobis tempore soluta deserunt.
+        Laborum quaerat libero qui omnis, velit nisi inventore, aspernatur illum minus numquam autem quo. Aspernatur hic voluptas laudantium quaerat eum natus, eos vitae, molestiae, eveniet aperiam nostrum iste excepturi eaque!
+        Et omnis est sapiente dolore, sed aliquam dolorum corporis vel laudantium molestias laborum minus id unde laboriosam excepturi perspiciatis distinctio a nisi aliquid cupiditate! Sed recusandae dolor eum ratione! Natus!
+        Sint assumenda voluptate laborum facere reprehenderit cumque atque impedit minus est, quibusdam ab incidunt vel et necessitatibus quod iure, excepturi cum ipsa a beatae laboriosam. Facere assumenda asperiores maxime nesciunt.
+        Totam, ratione maxime, non impedit ad officiis omnis rerum expedita necessitatibus laudantium quisquam modi ullam dolor? Error eum officia recusandae, similique dolor a harum inventore, eius iure, deleniti sequi assumenda!
+        Sunt quis fugit aperiam? Accusamus corrupti nulla voluptatum dignissimos culpa doloremque, magnam nesciunt nobis hic odio officia est ipsa saepe amet consequatur eaque consectetur quas aliquid beatae reprehenderit velit dolorem?
+        Distinctio animi voluptates repudiandae ea vero illo architecto soluta cupiditate nulla libero at excepturi sunt, consequatur et! Odio suscipit ad sapiente nobis neque illum, praesentium, facere natus laborum ducimus vero?
+        Nisi debitis deserunt fugit sapiente perspiciatis quidem earum sint sed iusto minus dolores odio eveniet animi neque, suscipit ratione nemo sit placeat! Rem cumque quam molestias, sed suscipit dolorem in?
+        Dicta, velit! Cumque pariatur odio aspernatur animi. Debitis sit a facere adipisci similique tempore nemo assumenda neque tempora id cumque eos nisi dicta iusto quisquam at voluptates reiciendis, minus doloremque!
+        Distinctio eum, dolorum aliquam consectetur, itaque labore mollitia adipisci quia, consequatur maiores voluptatum? Adipisci, ad consequuntur quibusdam architecto recusandae error et labore cupiditate delectus quisquam quam, saepe dolorem at a!
+       </div>
+    </section>
+    <br><br><br><br>
+     
+    <div id="div">
+        <p>
+        Please Note: &nbsp; &nbsp; <span style="color: rgb(189, 34, 34); font-weight: bolder;">Payments are non-refundable.</span> &nbsp; &nbsp;You are advised to come at least 10 minutes before schedule as you may be dismissed due to interference of scheduled appointments of other customers, in any event of your belated arrival. Thanks for your understanding.
+        </p>
+    </div>
+    <!-- <video src="video/200831_01_drone scotland_4K_012_preview.webm" autoplay muted loop></video> -->
+ <!-- All customers are required to pre-book appointments right on this platform or telephone. Appointment time starts from 7:00am-5:00pm on Tuesdays through Saturdays and 6:00am-5:00pm on Sundays -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./Morgana send me message.js"></script>
+    <script src="numbers.js"></script>
+</body>
+</html>
