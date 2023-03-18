@@ -208,6 +208,10 @@ body{
     color: #f8f9f9;
     background: #173459;
 }
+.active{
+    color: #f8f9f9;
+    background: #173459;
+}
 .shop{
     text-align: center;
     margin: 10px auto;
